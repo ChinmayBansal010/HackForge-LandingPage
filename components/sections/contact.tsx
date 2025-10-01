@@ -41,7 +41,7 @@ export default function Contact() {
               <div>
                 <div className="text-sm text-muted-foreground">Location</div>
                 <Link
-                  href="https://www.google.com/maps/place/Manav+Rachna+International+Institute+Of+Research+And+Studies/@28.369444,77.311389,17z/data=!4m6!3m5!1s0x390cdc7a5b030b9b:0x5f75e9213123c524!8m2!3d28.369444!4d77.3113889!16s%2Fm%2F02rq029?hl=en-US"
+                  href="https://www.google.com/maps/place/Manav+Rachna+International+Institute+Of+Research+And+Studies/@28.361533,77.309332,15z/data=!4m6!3m5!1s0x390cdd7753158047:0x4249a263f253a41!8m2!3d28.361533!4d77.309332!16s%2Fg%2F1td_1q1b?hl=en&entry=ttu"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -58,10 +58,7 @@ export default function Contact() {
               <div>
                 <div className="text-sm text-muted-foreground">Socials</div>
                 <div className="flex gap-3 text-sm">
-                  <Link href="#" aria-label="LinkedIn" className="hover:text-accent">
-                    LinkedIn
-                  </Link>
-                  <Link href="#" aria-label="Instagram" className="hover:text-accent">
+                  <Link href="https://www.instagram.com/hackforge_mr/" aria-label="Instagram" className="hover:text-accent" target="_blank" rel="noopener noreferrer">
                     Instagram
                   </Link>
                 </div>
