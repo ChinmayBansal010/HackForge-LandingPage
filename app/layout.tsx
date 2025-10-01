@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistMono } from "geist/font/mono"
-import { Inter } from "next/font/google"
+import { Inter, Oswald } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
@@ -18,13 +17,20 @@ const inter = Inter({
   display: "swap",
 })
 
+const oswald = Oswald({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+  weight: ["400", "700"],
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable} ${GeistMono.variable} antialiased`}>
+    <html lang="en" className={`dark ${inter.variable} ${oswald.variable} antialiased`}>
       <body className="font-sans">
         <Suspense fallback={<div>Loading...</div>}>
           {children}
