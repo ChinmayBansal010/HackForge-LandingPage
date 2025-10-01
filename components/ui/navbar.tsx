@@ -49,7 +49,7 @@ export default function Navbar() {
         </nav>
         <div className="hidden md:block">
           <Button asChild className="glow-primary">
-            <Link href="#register">Register</Link>
+            <Link href="#register">Register/Sponsor</Link>
           </Button>
         </div>
         <div className="md:hidden">
@@ -76,7 +76,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <Button asChild>
-                  <Link href="#register" onClick={handleLinkClick}>Register</Link>
+                  <Link href="#register" onClick={handleLinkClick}>Register/Sponsor</Link>
                 </Button>
               </div>
             </SheetContent>

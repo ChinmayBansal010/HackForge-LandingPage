@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { CalendarDays, MapPin, IndianRupee } from "lucide-react"
+import Link from "next/link"
 
 export default function About() {
   return (
@@ -30,7 +31,14 @@ export default function About() {
               <MapPin className="text-accent" aria-hidden />
               <div>
                 <div className="text-sm text-muted-foreground">Venue</div>
-                <div className="font-medium">MRIIRS, Faridabad</div>
+                <Link
+                  href="https://www.google.com/maps/place/Manav+Rachna+International+Institute+Of+Research+And+Studies/@28.369444,77.311389,17z/data=!4m6!3m5!1s0x390cdc7a5b030b9b:0x5f75e9213123c524!8m2!3d28.369444!4d77.3113889!16s%2Fm%2F02rq029?hl=en-US"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium hover:underline"
+                >
+                  MRIIRS, Faridabad
+                </Link>
               </div>
             </CardContent>
           </Card>

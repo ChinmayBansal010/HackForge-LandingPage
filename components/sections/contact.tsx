@@ -1,4 +1,4 @@
-import { Mail, MapPin, Link2 } from "lucide-react"
+import { Mail, MapPin, Link2, Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function Contact() {
@@ -9,7 +9,7 @@ export default function Contact() {
           Contact <span className="text-primary">Us</span>
         </h2>
 
-        <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="mx-auto mt-8 grid max-w-4xl grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="glass rounded-lg p-5">
             <div className="flex items-center gap-3">
               <Mail className="text-accent" aria-hidden />
@@ -21,13 +21,33 @@ export default function Contact() {
               </div>
             </div>
           </div>
+          
+          <div className="glass rounded-lg p-5">
+            <div className="flex items-center gap-3">
+              <Phone className="text-accent" aria-hidden />
+              <div>
+                <div className="text-sm text-muted-foreground">Phone</div>
+                <div className="flex flex-col text-sm">
+                  <Link href="tel:+917428944760" className="hover:underline">+91 7428944760</Link>
+                  <Link href="tel:+91971170686" className="hover:underline">+91 971170686</Link>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="glass rounded-lg p-5">
             <div className="flex items-center gap-3">
               <MapPin className="text-accent" aria-hidden />
               <div>
                 <div className="text-sm text-muted-foreground">Location</div>
-                <div className="">MRIIRS, Faridabad</div>
+                <Link
+                  href="https://www.google.com/maps/place/Manav+Rachna+International+Institute+Of+Research+And+Studies/@28.369444,77.311389,17z/data=!4m6!3m5!1s0x390cdc7a5b030b9b:0x5f75e9213123c524!8m2!3d28.369444!4d77.3113889!16s%2Fm%2F02rq029?hl=en-US"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  MRIIRS, Faridabad
+                </Link>
               </div>
             </div>
           </div>
@@ -43,9 +63,6 @@ export default function Contact() {
                   </Link>
                   <Link href="#" aria-label="Instagram" className="hover:text-accent">
                     Instagram
-                  </Link>
-                  <Link href="#" aria-label="Twitter" className="hover:text-accent">
-                    Twitter
                   </Link>
                 </div>
               </div>
