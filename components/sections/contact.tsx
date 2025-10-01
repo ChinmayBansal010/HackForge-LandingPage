@@ -41,7 +41,7 @@ export default function Contact() {
               <div>
                 <div className="text-sm text-muted-foreground">Location</div>
                 <Link
-                  href="https://www.google.com/maps/place/Manav+Rachna+International+Institute+Of+Research+And+Studies/@28.361533,77.309332,15z/data=!4m6!3m5!1s0x390cdd7753158047:0x4249a263f253a41!8m2!3d28.361533!4d77.309332!16s%2Fg%2F1td_1q1b?hl=en&entry=ttu"
+                  href="https://www.google.com/maps/place/Manav+Rachna+International+Institute+Of+Research+And+Studies/@28.450772,77.280475,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce0ab6fec0aab:0x87c9e10e1ae0b0fc!8m2!3d28.4507673!4d77.2830499!16s%2Fm%2F0glp0dd?hl=en&entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
