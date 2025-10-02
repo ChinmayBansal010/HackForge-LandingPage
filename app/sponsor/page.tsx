@@ -16,7 +16,7 @@ export default function SponsorPage() {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="glow-primary">
-            <Link href="/#contact">Contact Us for Sponsorship</Link>
+            <Link href="mailto:thehackforge.team@gmail.com">Contact Us for Sponsorship</Link>
           </Button>
           <Button asChild variant="outline" size="lg">
             <Link href="/">

@@ -1,5 +1,3 @@
-// components/sections/faq.tsx
-
 import {
   Accordion,
   AccordionContent,
@@ -28,7 +26,16 @@ const faqs = [
     question: "What should I bring to the event?",
     answer: "You should bring your laptop, chargers, any necessary software pre-installed, and a valid student ID. Most importantly, bring your ideas and enthusiasm!",
   },
-]
+  {
+    question: "Is offline payment available?",
+    answer: "No, offline payment is not available. All payments must be made through the designated online portal.",
+  },
+  {
+    question: "Will accommodation be provided?",
+    answer: "Accommodation for stay will be provided exclusively to outstation attendees (those coming from outside Delhi). However, travel expenses will not be reimbursed for anyone. Participants requesting accommodation must inform the organizers at least 2 days prior to the event.",
+  },
+];
+
 
 export default function Faq() {
   return (
