@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 
+import { MessageSquare } from "lucide-react"
+
+
 export default function Cta() {
   return (
     <section id="register" className="py-16 md:py-20 border-t border-white/10">
@@ -12,14 +15,14 @@ export default function Cta() {
           Ready to Forge the Future?
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-          Secure your spot at HackForge 2025. Register your team now!
+          Secure your spot at HackForge 2025. Register your team now and join our community!
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-8">
           {/* Registration CTA */}
           <div className="flex flex-col items-center gap-4 rounded-xl border border-primary/50 bg-white/5 p-8 shadow-lg shadow-primary/10">
             <h3 className="text-xl font-semibold">Join as a Participant</h3>
-            <p className="text-sm text-muted-foreground">Click the button or scan the QR code</p>
+            <p className="text-sm text-muted-foreground">Click the buttons or scan the QR code</p>
             <div className="flex items-center gap-4">
               <Button asChild size="lg" className="glow-primary">
                 <Link href="https://forms.gle/HJV1hNg5epM2rtUA8" target="_blank" rel="noopener noreferrer">
@@ -37,6 +40,14 @@ export default function Cta() {
                   <p className="mt-2 text-center text-sm text-muted-foreground">Scan to Register for HackForge 2025</p>
                 </DialogContent>
               </Dialog>
+            </div>
+            <div className="mt-4">
+              <Button asChild variant="outline">
+                <Link href="https://chat.whatsapp.com/H7Tt82lj6nY0gOPUvzNPgq" target="_blank" rel="noopener noreferrer">
+                   <MessageSquare className="mr-2 h-4 w-4" /> 
+                  Join WhatsApp Group
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

@@ -30,6 +30,7 @@ export default function Contact() {
                 <div className="flex flex-col text-sm">
                   <Link href="tel:+917428944760" className="hover:underline">+91 7428944760</Link>
                   <Link href="tel:+919711706866" className="hover:underline">+91 9711706866</Link>
+                  <Link href="tel:+919899014058" className="hover:underline">+91 9899014058</Link>
                 </div>
               </div>
             </div>
