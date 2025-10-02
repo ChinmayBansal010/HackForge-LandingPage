@@ -4,15 +4,15 @@ import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
+import { Download, Menu } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#themes", label: "Themes" },
-  { href: "#schedule", label: "Schedule" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#themes", label: "Themes" },
+  { href: "/#schedule", label: "Schedule" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#contact", label: "Contact" },
 ]
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
       hasScrolled ? "bg-background/80 backdrop-blur-md border-b border-white/10" : "bg-transparent"
     )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href="#" className="text-2xl font-bold font-heading tracking-wider text-gradient">
+        <Link href="/" className="text-2xl font-bold font-heading tracking-wider text-gradient">
           HACKFORGE
         </Link>
         <nav className="hidden md:flex items-center gap-6">
@@ -47,12 +47,21 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
-        <div className="hidden md:block">
-          <Button asChild className="glow-primary">
-            <Link href="#register">Register/Sponsor</Link>
+        <div className="hidden md:flex items-center gap-2">
+          <Button asChild variant="outline" size="sm">
+            <Link href="/brochure.pdf" download>
+              <Download className="mr-2 h-4 w-4" />
+              Brochure
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="sm">
+            <Link href="/sponsor">Sponsor</Link>
+          </Button>
+          <Button asChild className="glow-primary" size="sm">
+            <Link href="/#register">Register</Link>
           </Button>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-2">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
@@ -62,7 +71,7 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="grid gap-4 py-6">
-                <Link href="#" className="text-2xl font-bold font-heading text-gradient" onClick={handleLinkClick}>
+                <Link href="/" className="text-2xl font-bold font-heading text-gradient" onClick={handleLinkClick}>
                   HACKFORGE
                 </Link>
                 {navLinks.map(({ href, label }) => (
@@ -75,9 +84,20 @@ export default function Navbar() {
                     {label}
                   </Link>
                 ))}
-                <Button asChild>
-                  <Link href="#register" onClick={handleLinkClick}>Register/Sponsor</Link>
-                </Button>
+                <div className="flex flex-col gap-4 pt-4">
+                  <Button asChild>
+                    <Link href="/#register" onClick={handleLinkClick}>Register</Link>
+                  </Button>
+                  <Button asChild variant="outline">
+                    <Link href="/sponsor" onClick={handleLinkClick}>Sponsor</Link>
+                  </Button>
+                  <Button asChild variant="outline">
+                    <Link href="/brochure.pdf" download onClick={handleLinkClick}>
+                      <Download className="mr-2 h-4 w-4" />
+                      Download Brochure
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </SheetContent>
           </Sheet>

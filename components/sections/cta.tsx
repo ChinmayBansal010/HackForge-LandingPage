@@ -12,14 +12,14 @@ export default function Cta() {
           Ready to Forge the Future?
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-          Secure your spot at HackForge 2025. Register your team or reach out to us for sponsorship opportunities.
+          Secure your spot at HackForge 2025. Register your team now!
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-8 md:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-center gap-8">
           {/* Registration CTA */}
           <div className="flex flex-col items-center gap-4 rounded-xl border border-primary/50 bg-white/5 p-8 shadow-lg shadow-primary/10">
             <h3 className="text-xl font-semibold">Join as a Participant</h3>
-            <p className="text-sm text-muted-foreground">Click the button or scan the code</p>
+            <p className="text-sm text-muted-foreground">Click the button or scan the QR code</p>
             <div className="flex items-center gap-4">
               <Button asChild size="lg" className="glow-primary">
                 <Link href="https://forms.gle/HJV1hNg5epM2rtUA8" target="_blank" rel="noopener noreferrer">
@@ -38,15 +38,6 @@ export default function Cta() {
                 </DialogContent>
               </Dialog>
             </div>
-          </div>
-
-          {/* Sponsorship CTA */}
-          <div className="flex flex-col items-center gap-4">
-            <h3 className="text-xl font-semibold">Become a Sponsor</h3>
-            <Button asChild variant="outline" size="lg">
-              <Link href="mailto:thehackforge.team@gmail.com">Contact Us</Link>
-            </Button>
-            <p className="text-xs text-muted-foreground">thehackforge.team@gmail.com</p>
           </div>
         </div>
       </div>
