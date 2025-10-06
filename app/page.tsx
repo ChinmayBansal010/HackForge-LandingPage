@@ -1,3 +1,4 @@
+// app/page.tsx
 import Navbar from "@/components/ui/navbar"
 import Hero from "@/components/sections/hero"
 import About from "@/components/sections/about"
@@ -8,6 +9,7 @@ import Themes from "@/components/sections/themes"
 import Timeline from "@/components/sections/timeline"
 import Faq from "@/components/sections/faq"
 import Contact from "@/components/sections/contact"
+import Coordinators from "@/components/sections/coordinators" // NEW IMPORT
 
 export default function Page() {
   return (
@@ -22,6 +24,7 @@ export default function Page() {
         <Themes />
         <Timeline />
         <Faq />
+        <Coordinators />
         <Contact />
       </div>
       <footer className="py-8 mt-16 text-center text-sm text-muted-foreground border-t border-white/10">
