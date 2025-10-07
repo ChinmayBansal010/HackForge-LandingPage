@@ -5,7 +5,7 @@ import { Users } from "lucide-react"
 const coordinators = [
   { name: "Dr. Poonam Tanwar", designation: "Associate Professor" },
   { name: "Dr. Ramesh Chandra Sahoo", designation: "Associate Professor" },
-  { name: "Dr. Ali Abbas", designation: "Assistant Professor" },
+  { name: "Dr. Ali Abbas", designation: "Associate Professor" },
 ];
 
 export default function Coordinators() {
